@@ -1,0 +1,39 @@
+extends base.pug
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    section#introsection 
+        div  Welcome to Dancia Dance Acedemy 
+        div.lower  Eat Sleep Dance Repeat 
+    section#missionsection 
+        h2  Our Mission   
+        
+        div.card 
+          p Dance quality refers to the precision, expression, and fluidity with which movements are performed. It encompasses elements like control, timing, energy, and emotion, ensuring each movement is not only technically correct but also artistically engaging. 
+          h3 Quality 
+        div.card 
+          //- h3 Dance your way 
+          p Our mission at the dance academy is to inspire and nurture a love for dance in every student, fostering creativity, confidence, and discipline. We strive to provide a supportive environment where dancers of all levels can explore their passion, develop their skills, and express themselves through movement. Our goal is to cultivate artistry, technique, and a lifelong appreciation for the transformative power of dance.
+        div.card 
+          p Creativity in dance is about expressing individuality through movement, exploring new choreography, and interpreting music in unique ways. It involves breaking traditional boundaries, combining various styles, and using improvisation to bring fresh ideas to the performance.
+          h3 Creativity
+          
+           
+
+
+        
+
+    section#sponsorsection 
+        h2  Our Sponsors 
+        div#sponsor
+        img(src="/static/s1.png", alt="Sponsor Image", class="spImage")
+        img(src="/static/s2.png", alt="Sponsor Image", class="spImage")
+        img(src="/static/s3.png", alt="Sponsor Image", class="spImage")
+        img(src="/static/s4.png", alt="Sponsor Image", class="spImage")
+
+
